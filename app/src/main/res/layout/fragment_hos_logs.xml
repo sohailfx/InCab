@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutWrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    tools:context=".hos_logs">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/top24Hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/dayhours"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours2"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours2"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="1"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours3"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours3"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="2"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours2"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours2"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours4"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="3"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours3"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours5"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours3"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours5"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours4"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours6"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours4"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours6"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="5"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours5"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours7"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours5"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours7"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="6"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours6"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours8"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours6"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours8"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="7"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours7"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours9"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours7"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours9"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="8"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours8"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours10"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours8"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours10"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="9"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours9"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours11"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours9"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours11"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="10"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours10"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours12"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours10"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours12"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="11"
+                        android:textColor="@color/textForegroundColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours11"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours13"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours11"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours13"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="N"
+                        android:textColor="@color/orangeColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours12"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours14"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours12"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours14"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="13"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours13"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours15"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours13"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours15"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="14"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours14"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours16"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours14"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours16"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="15"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours15"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours17"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours15"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours17"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="16"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours16"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours18"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours16"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours18"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="17"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours17"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours19"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours17"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours19"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="18"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours18"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours20"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours18"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours20"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="19"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours19"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours21"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours19"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours21"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="20"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours20"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours22"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours20"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours22"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="21"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours21"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours23"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours21"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours23"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="22"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours22"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours24"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours22"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours24"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="23"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours23"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours25"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours23"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours25"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center_vertical"
+                        android:text="M"
+                        android:textColor="@color/readOnlyTextColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours24"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/gridContainerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/chartgrid"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top24Hours"></androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/totalHoursContainerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintLeft_toRightOf="@+id/gridContainerLayout"
+                    app:layout_constraintTop_toTopOf="@+id/gridContainerLayout">
+
+                    <TextView
+                        android:id="@+id/offDutyTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="5:30"
+                        android:textColor="@color/textForegroundColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/sleeperTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="9:30"
+                        android:textColor="@color/textForegroundColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/offDutyTotal" />
+
+                    <TextView
+                        android:id="@+id/drivingTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="4:00"
+                        android:textColor="@color/textForegroundColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sleeperTotal" />
+
+                    <TextView
+                        android:id="@+id/odndTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="5:00"
+                        android:textColor="@color/textForegroundColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/drivingTotal" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bottom24Hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:background="@null"
+                    app:layout_constraintEnd_toStartOf="@+id/gridContainerLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gridContainerLayout">
+
+                    <TextView
+                        android:id="@+id/dayhours_b"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b2"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b2"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="1"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b3"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b3"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="2"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b2"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b2"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b4"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="3"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b3"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b5"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b3"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b5"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="4"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b4"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b6"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b4"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b6"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="5"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b5"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b7"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b5"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b7"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="6"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b6"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b8"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b6"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b8"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="7"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b7"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b9"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b7"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b9"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="8"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b8"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b10"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b8"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b10"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="9"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b9"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b11"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b9"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b11"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="10"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b10"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b12"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b10"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b12"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="11"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b11"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b13"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b11"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b13"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="N"
+                        android:textColor="@color/orangeColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b12"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b14"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b12"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b14"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="13"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b13"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b15"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b13"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b15"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="14"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b14"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b16"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b14"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b16"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="15"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b15"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b17"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b15"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b17"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="16"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b16"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b18"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b16"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b18"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="17"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b17"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b19"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b17"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b19"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="18"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b18"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b20"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b18"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b20"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="19"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b19"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b21"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b19"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b21"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="20"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b20"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b22"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b20"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b22"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="21"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b21"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b23"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b21"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b23"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="22"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b22"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b24"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b22"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b24"
+                        android:layout_width="@dimen/number_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:gravity="center_vertical"
+                        android:text="23"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b23"
+                        app:layout_constraintEnd_toStartOf="@+id/dayhours_b25"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b23"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+                    <TextView
+                        android:id="@+id/dayhours_b25"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center_vertical"
+                        android:text="M"
+
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/dayhours_b24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/dayhours_b24"
+                        tools:layout_conversion_absoluteHeight="12dp"
+                        tools:layout_conversion_absoluteWidth="21dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/gridSideTextLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/top24Hours"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Off Duty"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textForegroundColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Sleeper"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Driving"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="On Duty"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textForegroundColor"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Not Driving"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/logDataHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Log Data"
+                android:textColor="@color/textForegroundColor"
+                android:textSize="@dimen/pageTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout"></TextView>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logDataHeading">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="48dp"
+                    android:stretchColumns="1"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_header_background">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Time"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Location"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Odometer"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Eng Hrs"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Event Type"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Origin"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Comments"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/table_even_row">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="26-Apr-2020"
+                            android:textSize="@dimen/tableTextSize"
+                            android:textStyle="bold"
+                            android:textColor="@color/whiteColor"
+                            />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                    </TableRow>
+                    <TableRow
+                        style="@style/table_odd_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="10:00" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="49 mi NNE Fallon, NV	" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="39564" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="758.2" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="Off Duty" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/whiteColor"
+                            android:padding="8dp"
+                            android:text="" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/table_even_row">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="26-Apr-2020"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/tableTextSize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/table_odd_row">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="10:00" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="49 mi NNE Fallon, NV	" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="39564" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="758.2" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Login" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/table_even_row">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="10:00" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="49 mi NNE Fallon, NV	" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="39564" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="758.2" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="ODND" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteColor"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="" />
+
+                    </TableRow>
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

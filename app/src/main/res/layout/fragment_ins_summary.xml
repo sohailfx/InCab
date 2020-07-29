@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutWrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    tools:context=".ins_summary">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="48dp"
+                    android:stretchColumns="0,2">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg"
+                            android:padding="8dp"
+                            android:text="Record Date" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:text="April 20, 2020"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Time Zone"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:text="US/Central"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg"
+                            android:padding="8dp"
+                            android:text="Carrier" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:text="ACME Trucking	"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="DOT Number"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:text="123456789"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver Name"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:text="Smith, Rechard"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver ID"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:text="213234"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Start - End Odometer"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="39564 - 39984	"
+                             />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver License Number"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="D99368210361"
+                             />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Co-Driver Name"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="John Doe"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Co-Driver ID"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="D88368214561"
+                            />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Miles Today"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="410"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver License State"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="IL"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="ELD Manufacturer"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="ACME ELDs"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Truck Tractor ID"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="Unit #123"
+                            />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Truck Tractor VIN"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="1M2P26Y5A445"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="ELD ID"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="987654"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Shipping ID"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="BL1233434"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Unidentified Driver Records"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="No"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Exempt Driver Status	"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="No"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Trailer ID"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="Unit #2134"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Data Diagnostic Indicators"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="No"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="ELD Malfunction Indicators"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="No"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Start - End Engine Hours"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="782.2 - 765.7"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Current Location"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="NA"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="File Comment"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="NA"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Print Display Date"
+                            android:textColor="@color/readOnlyTextColorOnBlackBg" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/textForegroundColor"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="NA"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

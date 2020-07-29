@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutWrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidentified">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="1,6">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_header_background">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Time"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Location"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Odometer"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Eng Hrs"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Event Type"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Origin"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Comments"
+                            android:textColor="@color/whiteColor"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/even_row_bgcolor">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="26-Apr-2020"
+                            android:textSize="@dimen/tableTextSize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/odd_row_bgcolor">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="10:00" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="49 mi NNE Fallon, NV	" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="39564" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="758.2" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Off Duty" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/even_row_bgcolor">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="26-Apr-2020"
+                            android:textSize="@dimen/tableTextSize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textSize="@dimen/tableTextSize" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/odd_row_bgcolor">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="10:00" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="49 mi NNE Fallon, NV	" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="39564" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="758.2" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Login" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/even_row_bgcolor">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="10:00" />
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="49 mi NNE Fallon, NV	" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="39564" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="758.2" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="ODND" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start|center_vertical"
+                            android:padding="8dp"
+                            android:text="" />
+
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
